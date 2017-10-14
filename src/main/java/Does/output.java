@@ -4,9 +4,9 @@ import java.util.Date;
 
 import org.joda.time.DateTime;
 
-import Registration.Student;
-import Registration.Module;
 import Registration.CourseProgramme;
+import Registration.Module;
+import Registration.Student;
 
 public class output {
 
@@ -17,9 +17,9 @@ public class output {
 		Student student = new Student("cian",22, new Date(),1);
 		Student student1 = new Student("frank",21, new Date(),2);
 		Student student2 = new Student("james",23, new Date(),3);
-		Student student3 = new Student("freddie",20, new Date(),4);
-		Student student4 = new Student("bob",25, new Date(),5);
-		CourseProgramme coolCourse = new CourseProgramme("TestCourse", new DateTime().now().minusYears(1), new DateTime().now());
+		new DateTime();
+		new DateTime();
+		CourseProgramme coolCourse = new CourseProgramme("TestCourse", DateTime.now().minusYears(1), DateTime.now());
 		Module testModule = new Module("Test Module", "CT417");
 		
 		testModule.setStudent(student);
