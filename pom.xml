@@ -3,41 +3,59 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.codebind</groupId>
 	<artifactId>maven-assignment1_2</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>jar</packaging>
 
-	<dependencies>
-		<dependency>
-			<groupId>com.codebind</groupId>
-			<artifactId>maven-assignment1</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
 
-		</dependency>
+<name>maven-assignment1_2</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.1.0</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <transformers>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                  <mainClass>com.codebind.output</mainClass>
+                </transformer>
+              </transformers>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+
+
+	<dependencies>
 		<dependency>
 			<groupId>joda-time</groupId>
 			<artifactId>joda-time</artifactId>
 			<version>2.9.9</version>
 		</dependency>
+		<dependency>
+	    <groupId>com.github.14357861</groupId>
+	    <artifactId>SoftEng_Ass_1_1</artifactId>
+	    <version>dac401dfb5</version>
+	</dependency>
 	</dependencies>
-
-	<!-- <distributionManagement> -->
-	<!-- <repository> -->
-	<!-- <id>dropbox-maven-repo</id> -->
-	<!-- <url>file:///C:/Users/CianFDoherty/Dropbox/Public/REPOSITORY</url> -->
-	<!-- </repository> -->
-	<!-- </distributionManagement> -->
-
+	
 	<repositories>
 		<repository>
 			<id>jitpack.io</id>
 			<url>https://jitpack.io</url>
 		</repository>
-		<!-- <repository> -->
-		<!-- <id>dropbox-mvn-repo</id> -->
-		<!-- <name>My Dropbox Repository</name> -->
-		<!-- <url> -->
-		<!-- https://www.dropbox.com/s/pzjl7obwaf3yfa0/Assignment1_1.jar?dl=0 -->
-		<!-- </url> -->
-		<!-- </repository> -->
 	</repositories>
 </project>
