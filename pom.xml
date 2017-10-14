@@ -7,34 +7,37 @@
 	<packaging>jar</packaging>
 
 	<dependencies>
-
-
 		<dependency>
 			<groupId>com.codebind</groupId>
 			<artifactId>maven-assignment1</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+
 		</dependency>
-	
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.9.9</version>
+		</dependency>
 	</dependencies>
 
-<!-- 	<distributionManagement> -->
-<!-- 		<repository> -->
-<!-- 			<id>dropbox-maven-repo</id> -->
-<!-- 			<url>file:///C:/Users/CianFDoherty/Dropbox/Public/REPOSITORY</url> -->
-<!-- 		</repository> -->
-<!-- 	</distributionManagement> -->
+	<!-- <distributionManagement> -->
+	<!-- <repository> -->
+	<!-- <id>dropbox-maven-repo</id> -->
+	<!-- <url>file:///C:/Users/CianFDoherty/Dropbox/Public/REPOSITORY</url> -->
+	<!-- </repository> -->
+	<!-- </distributionManagement> -->
 
 	<repositories>
 		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
 		</repository>
-<!-- 		<repository> -->
-<!-- 			<id>dropbox-mvn-repo</id> -->
-<!-- 			<name>My Dropbox Repository</name> -->
-<!-- 			<url> -->
-<!-- 			https://www.dropbox.com/s/pzjl7obwaf3yfa0/Assignment1_1.jar?dl=0 -->
-<!--        		</url> -->
-<!-- 		</repository> -->
+		<!-- <repository> -->
+		<!-- <id>dropbox-mvn-repo</id> -->
+		<!-- <name>My Dropbox Repository</name> -->
+		<!-- <url> -->
+		<!-- https://www.dropbox.com/s/pzjl7obwaf3yfa0/Assignment1_1.jar?dl=0 -->
+		<!-- </url> -->
+		<!-- </repository> -->
 	</repositories>
 </project>
